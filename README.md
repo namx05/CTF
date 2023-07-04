@@ -6,8 +6,6 @@ CTFs (Capture The Flags / War games) are security challenges where vulnerable co
 
 
 | Source | Report |
--- | - 
-|Quill Academy | [!QuillAcademy](QuillAcademy)
-this | is | amazing | vbri
--- | - |-  |-
+-- | --
+|Quill Academy | [QuillAcademy](QuillAcademy)
 
