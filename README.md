@@ -7,7 +7,7 @@ __CTFs__ (Capture The Flags) are security challenges where vulnerable code is pr
 <br>
 Solution to: 
 
-- [QuillAcademy Challenges ](QuillAcademy)
+- [Quill-CTF WriteUps ](Quill-CTF)
 
 Soon to be added:
 - [Ethernaut](https://ethernaut.openzeppelin.com/)
