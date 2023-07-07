@@ -30,11 +30,11 @@ for (uint i; i < rentNFTs.length; i++) {
 
 ## POC:
 
-In the test solution.
+[Test File](NFTBank.t.sol)
 
 ```solidity
 
-// NOTE - add this at the after  CryptoKitties contract
+// NOTE - add this after  CryptoKitties contract
 contract CryptoDoggies is ERC721("CryptoDoggies", "DOG"), Ownable {
     function mint(address to, uint id) external onlyOwner {
         _safeMint(to, id);
