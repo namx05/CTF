@@ -7,7 +7,7 @@
 <br>
 Solution to:
 
-- [Quill-CTF WriteUps ](https://academy.quillaudits.com/challenges)
+- [Quill-CTF](https://academy.quillaudits.com/challenges)
 
 Soon to be added:
 
